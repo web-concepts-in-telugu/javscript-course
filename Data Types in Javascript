@@ -1,0 +1,58 @@
+JavaScript types
+
+1. Primitive types 
+
+2. Non-primitive types 
+
+1. Primitive types : To Store Single Values. 
+    String
+        Example :
+        const str = "Vivek Singh Bisht"; //using double quotes
+        const str = 'John Doe'; //using single quotes
+
+    Number - It represents a number and can be written with or without decimals.
+        Example :
+        const x = 3; //without decimal
+        const y = 3.6; //with decimal
+
+    BigInt - This data type is used to store numbers which are above the limitation of the Number data type. It can store large integers and is represented by adding “n” to an integer literal.
+        Example :
+        const bigInteger =  234567890123456789012345678901234567890;
+
+    Boolean - It represents a logical entity and can have only two values : true or false. Booleans are generally used for conditional testing.
+        Example :
+        true / false
+
+    Undefined - When a variable is declared but not assigned, it has the value of undefined and it’s type is also undefined.
+        Example :
+    let x; // value of x is undefined
+    
+    Null - It represents a non-existent or a invalid value.
+        Example :
+        const z = null;
+
+    Symbol - It is a new data type introduced in the ES6 version of javascript. It is used to store an anonymous and unique value.
+        Example :
+        const symbol1 = Symbol('symbol');
+
+2. Non-primitive types: To store multiple and complex values, non-primitive data types are used.
+    1. Object - Used to store collection of data.
+        Example:
+        const obj1 = {
+            b:  2,
+            a:  1,
+        }
+      
+    // Collection of data as an ordered list
+     
+    2. const array1 = [1, 2, 4, 4.1];
+
+typeof
+
+    typeof "John Doe" // Returns "string"
+    typeof 3.14 // Returns "number"
+    typeof true // Returns "boolean"
+    typeof 234567890123456789012345678901234567890n // Returns bigint
+    typeof undefined // Returns "undefined"
+    typeof null // Returns "object" (kind of a bug in JavaScript)
+    typeof Symbol('symbol') // Returns Symbol
