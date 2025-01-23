@@ -1,0 +1,33 @@
+Functions
+
+- A set of statements that performs a task;
+
+Defining functions
+ 
+ 1. Function declarations
+
+    A function declaration consists of the function keyword, followed by:
+        - The name of the function.
+        - A list of parameters to the function, enclosed in parentheses and separated by commas.
+        - The JavaScript statements that define the function, enclosed in curly braces, { /* … */ }
+
+    example: 
+    
+    function square(number) {
+        return number * number;
+    }
+    square(4)
+
+
+ 2. Function expressions
+    
+    Function expressions are anonymous functions; it does not have to have a name.
+    But we can assign it to a variable.
+
+    For example, the function square could have been defined as:
+
+    const square = function (number) {
+        return number * number;
+    };
+
+    console.log(square(4)); // 16
