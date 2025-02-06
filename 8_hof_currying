@@ -1,0 +1,48 @@
+Higher Order Functions & Currying
+
+Higher Order Functions in javascript.
+
+  Functions that operate on other functions, 
+  either by taking them as arguments or by returning them, 
+  are called higher-order functions.
+
+  Higher-order functions are a result of functions being first-class citizens in javascript.
+
+  Examples of higher-order functions:
+
+  function higherOrder(fn) {
+    fn();
+  }
+    
+  higherOrder(function() { console.log("Hello world") });  
+  
+  function higherOrder2() {
+    return function() {
+      return "Do something";
+    }
+  }      
+  var x = higherOrder2();
+  x()   // Returns "Do something"
+
+  array.map(() => {}) array.filter()
+
+Currying
+
+  Currying is an advanced technique to transform a function of arguments n, to n functions of one or fewer arguments.
+
+  Example of a curried function:
+
+  function add (a) {
+    return function(b){
+      return a + b;
+    }
+  }
+
+  add(3)(4)   
+
+
+Uses:
+
+  - Abstraction and Code Reusability
+  - Encapsulation of Logic
+  - Managing Asynchronous Code
